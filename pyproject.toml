@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantile-cf"
+version = "0.1.0"
+description = "Counterfactual prediction with bi-level quantile regression"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Shaoan Xie" },
+    { name = "Biwei Huang" },
+    { name = "Bin Gu" },
+    { name = "Tongliang Liu" },
+    { name = "Peter Spirtes" },
+    { name = "Kun Zhang" },
+]
+dependencies = ["torch>=1.12", "numpy"]
+
+[project.optional-dependencies]
+examples = ["matplotlib"]
+
+[project.urls]
+Paper = "https://openreview.net/pdf?id=0T1Pd65fyD"
+
+[tool.setuptools]
+packages = ["quantile_cf"]
